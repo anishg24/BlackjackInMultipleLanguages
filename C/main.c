@@ -47,14 +47,20 @@ int main() {
         }
     }
 
-    if (player.score == dealer.score){
+    if (player.score == 21){
+        printf("YOU GOT 21! YOU WON!");
+        exit(0);
+    } else if (dealer.score == 21) {
+        printf("DEALER GOT 21! YOU LOSE!");
+        exit(0);
+    } else if (player.score == dealer.score){
         printf("YOU PUSHED WITH THE DEALER! YOU TIED!");
         exit(0);
     } else if (21 - player.score > 21 - dealer.score){
-        printf("YOU WERE CLOSER TO 21! YOU WIN!");
+        printf("DEALER WAS CLOSER TO 21! YOU LOSE!");
         exit(0);
     } else {
-        printf("DEALER WAS CLOSER TO 21! YOU LOSE!");
+        printf("YOU WERE CLOSER TO 21! YOU WIN!");
         exit(0);
     }
     return 0;
