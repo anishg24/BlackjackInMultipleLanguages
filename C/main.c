@@ -33,7 +33,7 @@ int main() {
         draw(&player, &deck, 1);
         printHand(&player);
         if (player.score > 21){
-            printf("YOU BUSTED! DEALER WINS!");
+            printf("YOU BUSTED! DEALER WINS!\n");
             exit(0);
         }
     }
@@ -42,25 +42,25 @@ int main() {
         draw(&dealer, &deck, 1);
         printHand(&dealer);
         if (dealer.score > 21){
-            printf("DEALER BUSTS! YOU WIN");
+            printf("DEALER BUSTS! YOU WIN\n");
             exit(0);
         }
     }
 
     if (player.score == 21){
-        printf("YOU GOT 21! YOU WON!");
+        printf("YOU GOT 21! YOU WON!\n");
         exit(0);
     } else if (dealer.score == 21) {
-        printf("DEALER GOT 21! YOU LOSE!");
+        printf("DEALER GOT 21! YOU LOSE!\n");
         exit(0);
     } else if (player.score == dealer.score){
-        printf("YOU PUSHED WITH THE DEALER! YOU TIED!");
+        printf("YOU PUSHED WITH THE DEALER! YOU TIED!\n");
         exit(0);
     } else if (21 - player.score > 21 - dealer.score){
-        printf("DEALER WAS CLOSER TO 21! YOU LOSE!");
+        printf("DEALER WAS CLOSER TO 21! YOU LOSE!\n");
         exit(0);
     } else {
-        printf("YOU WERE CLOSER TO 21! YOU WIN!");
+        printf("YOU WERE CLOSER TO 21! YOU WIN!\n");
         exit(0);
     }
     return 0;
