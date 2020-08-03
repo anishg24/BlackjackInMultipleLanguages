@@ -25,7 +25,7 @@ In this repo you can expect to see all my attempts at creating Blackjack in lang
 ## Project Log
 Each folder (labeled with the respective programming language) will include its own `README.md` file. A list of the ones that are available are provided below:
 
-* [C](https://github.com/anishg24/BlackjackInMultipleLanguage/C/README.md)
+* [C](https://github.com/anishg24/BlackjackInMultipleLanguages/blob/master/C/README.md)
 * C++
 * Java
 * Python
